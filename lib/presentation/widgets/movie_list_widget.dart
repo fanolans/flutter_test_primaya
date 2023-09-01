@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_test_primaya/application/movie_provider.dart';
+import 'package:flutter_test_primaya/providers/movie_provider.dart';
 
 class ListWidget extends ConsumerWidget {
   const ListWidget({super.key});

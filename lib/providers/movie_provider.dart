@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_test_primaya/data/movie_service.dart';
-import 'package:flutter_test_primaya/domain/movie_model.dart';
+import 'package:flutter_test_primaya/repositories/movie_service.dart';
+import 'package:flutter_test_primaya/models/movie_model.dart';
 
 final moviesProvider = Provider<ApiService>((ref) => ApiService());
 

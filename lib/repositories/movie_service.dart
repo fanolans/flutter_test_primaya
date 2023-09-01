@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_test_primaya/domain/movie_model.dart';
+import 'package:flutter_test_primaya/models/movie_model.dart';
 
 class ApiService {
   final Dio dio = Dio();

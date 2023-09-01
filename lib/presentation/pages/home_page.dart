@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_test_primaya/presentation/movie_list_widget.dart';
+import 'package:flutter_test_primaya/presentation/widgets/movie_list_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
