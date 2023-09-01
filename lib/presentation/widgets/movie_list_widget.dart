@@ -27,15 +27,15 @@ class ListWidget extends ConsumerWidget {
                     children: [
                       Text(
                         'Title: ${movieData[index].title}',
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.black),
                       ),
                       Text(
                         'Year: ${movieData[index].year}',
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.black),
                       ),
                       Text(
                         'Runtime: ${movieData[index].runtime}',
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.black),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -43,7 +43,7 @@ class ListWidget extends ConsumerWidget {
                         children: [
                           const Text(
                             'Poster: ',
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.black),
                           ),
                           Container(
                             height: MediaQuery.of(context).size.height / 3,
