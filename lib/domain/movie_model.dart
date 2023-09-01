@@ -1,24 +1,24 @@
 import 'dart:convert';
 
-class MovieModel {
+class MoviesModel {
   final String title;
   final String year;
   final String runtime;
   final String poster;
-  MovieModel({
+  MoviesModel({
     required this.title,
     required this.year,
     required this.runtime,
     required this.poster,
   });
 
-  MovieModel copyWith({
+  MoviesModel copyWith({
     String? title,
     String? year,
     String? runtime,
     String? poster,
   }) {
-    return MovieModel(
+    return MoviesModel(
       title: title ?? this.title,
       year: year ?? this.year,
       runtime: runtime ?? this.runtime,
@@ -35,8 +35,8 @@ class MovieModel {
     };
   }
 
-  factory MovieModel.fromMap(Map<String, dynamic> map) {
-    return MovieModel(
+  factory MoviesModel.fromMap(Map<String, dynamic> map) {
+    return MoviesModel(
       title: map['title'] ?? '',
       year: map['year'] ?? '',
       runtime: map['runtime'] ?? '',
@@ -46,19 +46,19 @@ class MovieModel {
 
   String toJson() => json.encode(toMap());
 
-  factory MovieModel.fromJson(String source) =>
-      MovieModel.fromMap(json.decode(source));
+  factory MoviesModel.fromJson(String source) =>
+      MoviesModel.fromMap(json.decode(source));
 
   @override
   String toString() {
-    return 'MovieModel(title: $title, year: $year, runtime: $runtime, poster: $poster)';
+    return 'MoviesModel(title: $title, year: $year, runtime: $runtime, poster: $poster)';
   }
 
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
 
-    return other is MovieModel &&
+    return other is MoviesModel &&
         other.title == title &&
         other.year == year &&
         other.runtime == runtime &&
